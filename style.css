@@ -1,34 +1,60 @@
 body {
-  background: #0d0d0d;
-  color: white;
-  font-family: Poppins;sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f1f3f6;
 }
 
-h1 {
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #2874f0;
+  padding: 10px;
+  color: white;
+}
+
+.navbar input {
+  width: 40%;
+  padding: 8px;
+}
+
+/* HERO */
+.hero {
+  background: #2874f0;
+  color: white;
   text-align: center;
-  animation: fadeDown 1.5s;
-}
-a {
-  color: gold;
+  padding: 40px;
 }
 
-button {
-  background: gold;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 8px;
-  cursor: pointer;
+/* PRODUCTS */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
   transition: 0.3s;
 }
 
-button:hover {
-  transform: scale(1.1);
-  background: #ffcc00;
+.card:hover {
+  transform: scale(1.05);
 }
 
-@keyframes fadeDown {
-  from {opacity: 0; transform: translateY(-40px);}
-  to {opacity: 1; transform: translateY(0);}
+.card img {
+  width: 100%;
+}
+
+/* BUTTON */
+button {
+  background: #fb641b;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
 }
