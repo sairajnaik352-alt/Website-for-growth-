@@ -1,53 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luxury Drop Clothing</title>
+  <title>Genuine Bazzar</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <h1>Luxury Drop</h1>
-  <a href="#collection" class="btn">Shop Now</a>
-</header>
+<!-- NAVBAR -->
+<div class="navbar">
+  <h2>Genuine Bazzar</h2>
+  <input type="text" placeholder="Search for products...">
+  <a href="cart.html"><button>Cart 🛒</button></a>
+</div>
 
-<section id="collection">
-  <h2>Our Collection</h2>
+<!-- HERO -->
+<div class="hero">
+  <h1>Big Sale 🔥</h1>
+  <p>Up to 70% off</p>
+</div>
 
-  <div class="products">
+<!-- PRODUCTS -->
+<div class="products">
 
-    <div class="card">
-      <img src="https://via.placeholder.com/300" alt="">
-      <h3>Classic White T-Shirt</h3>
-      <p>₹799</p>
-      <button>Buy Now</button>
-    </div>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/300" alt="">
-      <h3>Premium Black Hoodie</h3>
-      <p>₹1499</p>
-      <button>Buy Now</button>
-    </div>
-
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h3>T-Shirt</h3>
+    <p>₹799</p>
+    <button onclick="addToCart('T-Shirt',799)">Add to Cart</button>
   </div>
-</section>
 
-<section class="journey">
-  <h2>Brand Journey</h2>
-  <p>2024 — Brand Started</p>
-  <p>2025 — 1000+ Customers</p>
-  <p>2026 — Global Dropshipping</p>
-</section>
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h3>Hoodie</h3>
+    <p>₹1499</p>
+    <button onclick="addToCart('Hoodie',1499)">Add to Cart</button>
+  </div>
 
-<footer>
-  <p>© 2026 Luxury Drop Clothing</p>
-</footer>
+</div>
 
+<script src="script.js"></script>
 </body>
 </html>
